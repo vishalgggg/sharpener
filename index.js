@@ -7,6 +7,6 @@ Header.style.borderBottom = 'orange';
 const basketHeading = document.getElementById('basket-heading');
 basketHeading.style.color = 'green';
 const Thanks = document.getElementById('thanks');
-Thanks.innerHTML = <p>Please visit us again</p>;
+Thanks.innerHTML = '<p>Please visit us again</p>';
 
 
