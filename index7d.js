@@ -43,3 +43,11 @@ Fruits.addEventListener('click',function(event){
         Fruits.removeChild(fruit_to_delete);
     }
 });
+// why this is not working?
+// const deleteBtn = document.querySelector('.delete-btn');
+// deleteBtn.addEventListener('click',function(event){
+    
+//         const fruit_to_delete = event.target.parentElement;
+//         Fruits.removeChild(fruit_to_delete);
+    
+// });
