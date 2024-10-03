@@ -2,10 +2,12 @@
 function handleFormSubmit(event) {
     event.preventDefault();
   
-    const username = document.getElementById('username').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-  
+    // const username = document.getElementById('username').value;
+    // const email = document.getElementById('email').value;
+    // const phone = document.getElementById('phone').value;
+    const username = event.target.username.value;
+    const email = event.target.email.value;
+    const phone = event.target.phone.value;
     const user = { username, email, phone };
   
     // Store user details with email as the key
