@@ -28,11 +28,12 @@ function handleFormSubmit(event) {
     userList.addEventListener('click',function(event){
         if(event.target.classList.contains('delete-btn')){
             const li = event.target.parentElement;
-            console.log(li);
-            const email = li.textContent.match(/\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b/);
-            if(email){
-                localStorage.removeItem(email[0]);
-            }
+            // console.log(li);
+            // const email = li.textContent.match(/\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b/);
+            // if(email){
+            //     localStorage.removeItem(email[0]);
+            // }
+            localStorage.removeItem(user.email);
             userList.removeChild(li);
         }
     });
