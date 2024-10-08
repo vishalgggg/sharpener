@@ -32,10 +32,13 @@ function handleFormSubmit(event) {
         userList.removeChild(li);
     }
     editbutton.onclick=()=>{
-        event.target.username.value = user.username;
+        // event.target.username.value = user.username;
         // console.log(event.target.username);
-        event.target.email.value = user.email;
-        event.target.phone.value = user.phone;
+        // event.target.email.value = user.email;
+        // event.target.phone.value = user.phone;
+        document.getElementById('username').value = user.username;
+        document.getElementById('email').value = user.email;
+        document.getElementById('phone').value = user.phone;
         localStorage.removeItem(user.email);
         userList.removeChild(li);
     }
